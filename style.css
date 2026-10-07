@@ -1,6 +1,8 @@
 html {
     background-color: black;
     background-image: radial-gradient(to top, #000000, #272727);
+    margin: 0; /* Good practice to reset margin */
+    padding: 0; /* Good practice to reset padding */
 }
 
 .navb {
@@ -18,24 +20,21 @@ html {
     gap: 1.5rem;
     margin: 0;
     padding: 0;
-    text-shadow: #000000;
-
+    text-shadow: #000000; /* Text shadow usually takes color and offset, this might not be doing what you expect */
 }
 
 a {
     text-decoration: none;
     color: #fff;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
-
-
 }
 
+/* This is for a single featured box, might not be used for product items */
 .box {
     margin: 1px;
-    background-image: linear-gradient(to top, #000000, #464646);   /* 141414 */
+    background-image: linear-gradient(to top, #000000, #464646);
     padding: 1rem 2rem;
-    grid-row: 10rem;
+    /* grid-row: 10rem; */ /* This property is not standard for grid-row sizing like this. Use grid-template-rows or auto. */
 }
 
 .monoton-regular {
@@ -44,10 +43,10 @@ a {
   font-style: normal;
 }
 
-
+/* Styles for a specific featured box, if you have one */
 .box h2 {
     color: #fff;
-    font-size: 50px;   
+    font-size: 50px;
     font-family: "Monoton", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -58,8 +57,7 @@ a {
 
 .box p {
     color: #fff;
-    font-size: 50px;   
-    
+    font-size: 50px;
     position: relative;
     bottom: 700px;
     left: 1px;
@@ -72,15 +70,13 @@ a {
     border-radius: 10px;
     transition: transform 0.3s ease;
     object-fit: cover;
-
     position: relative;
     bottom: 100px;
     left: 800px;
-
 }
 
 
-/* COMECO DOS PRODUTOS AAAAAAAAAAAAAAAAAAAA */
+/* COMECO DOS AD AAAAAAAAAAAAAAAAAAAA */
 .Geral {
     max-width: 1200px;
     
@@ -95,10 +91,10 @@ a {
 .Geral > div {
     background: white;
     border-radius: 10px;
-    padding: 20px;
+    padding: 100px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: center;
+    text-align: start;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -179,7 +175,5 @@ a {
 
 .pbox {
     top: 90px;
-    left: 40px;
+    left: 100px;
 }
-
-    
