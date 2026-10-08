@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8" /> <!-- Corrected UTP-8 to UTF-8 -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <title> Loja || Comprar! </title>
-    </head>
-    <body>
-       <div class="navbat">
-            <nav class="navb">
-                <ul class="navi">
-                    <a href="index.html">Home</a>
-                    <a href="sobre.html">Sobre</a>
-                    <a href="contato.html">Contato</a>
-                </ul>
-            </nav>
-        </div>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Loja || Comprar!</title>
+</head>
+<body>
 
-        <!-- This is the container where your products will be rendered -->
-        <main class="Geral" id="product-list">
-            <!-- Products will be added here by JavaScript -->
-        </main>
+    <div class="navbat">
+        <nav class="navb">
+            <ul class="navi">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="loja.html">Loja</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </div>
 
-        <!-- Link your JavaScript file here -->
-        <!-- It's best to place script tags just before the closing </body> tag -->
-        <script src="stock.js"></script>
-    </body>
+    <h1 class="titulo-pagina">Nossos Produtos</h1>
+
+    <main class="Geral" id="product-list">
+        <!-- Preenchido pelo stock.js -->
+    </main>
+
+    <script src="stock.js"></script>
+</body>
 </html>
